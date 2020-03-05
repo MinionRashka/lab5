@@ -1,3 +1,7 @@
+/**
+ * Simple Class which contains x and y position which we can get from it or set
+ */
+
 package MyOwnClasses;
 
 import javax.xml.bind.annotation.XmlElement;
@@ -28,4 +32,11 @@ public class Coordinates {
         return y;
     }
 
+    @Override
+    public String toString() {
+        return "Coordinates{" +
+                "x=" + x +
+                ", y=" + y +
+                '}';
+    }
 }

@@ -1,3 +1,7 @@
+/**
+ * Main HumanBeing class which contains variables and methods to get and set them
+ */
+
 package MyOwnClasses;
 
 import enums.Mood;
@@ -6,6 +10,7 @@ import enums.WeaponType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 @XmlRootElement
 public class HumanBeing {
@@ -19,6 +24,7 @@ public class HumanBeing {
     private WeaponType weaponType = WeaponType.KNIFE;
     private Mood mood = Mood.FRENZY;
     private Car car;
+    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
 
     public HumanBeing() {
         this.creationDate = LocalDateTime.now();
@@ -52,6 +58,8 @@ public class HumanBeing {
         this.name = name;
     }
 
+
+
     @XmlElement
     public Coordinates getCoordinates() { return coordinates; }
     public void setCoordinates(Coordinates coordinates) {
@@ -63,9 +71,7 @@ public class HumanBeing {
     public void setCoordinatesY(int y) { coordinates.setY(y); }
 
     @XmlElement
-    public LocalDateTime getCreationDate() {
-        return creationDate;
-    }
+    public String getCreationDate() { return creationDate.format(formatter); }
     public void setCreationDate() { this.creationDate = LocalDateTime.now(); }
 
     @XmlElement

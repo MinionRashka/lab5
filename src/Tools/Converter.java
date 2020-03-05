@@ -1,3 +1,7 @@
+/**
+ * This simple tool class allows us to convert from ArrayList to LinkedHashMap and backwards
+ */
+
 package Tools;
 
 import MyOwnClasses.HumanBeing;

@@ -1,3 +1,9 @@
+/**
+ * This class allows us to check HumanList or HumanBeing if there is no creation rules violation
+ *
+ * @throws Exceptions.HumanValueException
+ */
+
 package Tools;
 
 import Exceptions.HumanValueException;
