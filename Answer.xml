@@ -1,71 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <humanList>
     <humanBeing>
         <car>
             <cool>true</cool>
         </car>
         <coordinates>
-            <x>82.0</x>
-            <y>1</y>
-        </coordinates>
-        <creationDate/>
-        <hasToothpick>true</hasToothpick>
-        <id>1</id>
-        <impactSpeed>20</impactSpeed>
-        <mood>RAGE</mood>
-        <name>Я</name>
-        <realHero>true</realHero>
-        <weaponType>SHOTGUN</weaponType>
-    </humanBeing>
-    <humanBeing>
-        <car>
-            <cool>true</cool>
-        </car>
-        <coordinates>
-            <x>82.0</x>
+            <x>2.0</x>
             <y>2</y>
         </coordinates>
         <creationDate/>
         <hasToothpick>true</hasToothpick>
-        <id>2</id>
-        <impactSpeed>20</impactSpeed>
-        <mood>RAGE</mood>
-        <name>Футбольный</name>
-        <realHero>true</realHero>
-        <weaponType>SHOTGUN</weaponType>
-    </humanBeing>
-    <humanBeing>
-        <car>
-            <cool>true</cool>
-        </car>
-        <coordinates>
-            <x>82.0</x>
-            <y>3</y>
-        </coordinates>
-        <creationDate/>
-        <hasToothpick>true</hasToothpick>
-        <id>3</id>
-        <impactSpeed>20</impactSpeed>
-        <mood>RAGE</mood>
-        <name>Мячик</name>
-        <realHero>true</realHero>
-        <weaponType>SHOTGUN</weaponType>
-    </humanBeing>
-    <humanBeing>
-        <car>
-            <cool>true</cool>
-        </car>
-        <coordinates>
-            <x>22.0</x>
-            <y>22</y>
-        </coordinates>
-        <creationDate/>
-        <hasToothpick>true</hasToothpick>
         <id>1</id>
-        <impactSpeed>22</impactSpeed>
-        <mood>FRENZY</mood>
-        <name>s</name>
+        <impactSpeed>2</impactSpeed>
+        <mood>SADNESS</mood>
+        <name>Alex</name>
         <realHero>true</realHero>
-        <weaponType>SHOTGUN</weaponType>
+        <weaponType>HAMMER</weaponType>
     </humanBeing>
 </humanList>

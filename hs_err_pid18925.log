@@ -1,0 +1,322 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0xfffffd7fff0c3100, pid=18925, tid=2
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_60-b27) (build 1.8.0_60-b27)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.60-b23 mixed mode solaris-amd64 compressed oops)
+# Problematic frame:
+# C  [libc.so.1+0x53100]  memcpy+0x15d0
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000041e800):  JavaThread "main" [_thread_in_native, id=2, stack(0xfffffd7ffd22f000,0xfffffd7ffd32f000)]
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 1 (SEGV_MAPERR), si_addr: 0xfffffd7fff29c000
+
+Registers:
+RAX=0x00000000008e4f32, RBX=0x0000000000006f43, RCX=0x00000000008e5eb0, RDX=0xfffffd7fff29bff0
+RSP=0xfffffd7ffd32c4a8, RBP=0xfffffd7ffd32c500, RSI=0xfffffd7fff29b07e, RDI=0x00000000008e4f32
+R8 =0x0000000000005fc5, R9 =0x0000000000000b90, R10=0xfffffd7fff0c3100, R11=0x000000000000000c
+R12=0x0000000000ac08d0, R13=0xfffffd7fff29b050, R14=0x0000000000766e80, R15=0xfffffd7fff29b07e
+RIP=0xfffffd7fff0c3100, RFLAGS=0x0000000000010206
+
+Top of Stack: (sp=0xfffffd7ffd32c4a8)
+0xfffffd7ffd32c4a8:   fffffd7ffd163d36 00006d6d00766e80
+0xfffffd7ffd32c4b8:   00000000616c632e 0000000000000000
+0xfffffd7ffd32c4c8:   0000000000720c90 fffffd7ffd32c4f0
+0xfffffd7ffd32c4d8:   0000000000767080 0000000000766e80
+0xfffffd7ffd32c4e8:   000000009897234b 0000000000000012
+0xfffffd7ffd32c4f8:   0000000000000000 fffffd7ffd32c560
+0xfffffd7ffd32c508:   fffffd7ffd1641c0 000000000041e800
+0xfffffd7ffd32c518:   0000000100000000 fffffd7ffd32c592
+0xfffffd7ffd32c528:   fffffd7ffd32c580 000000000041e800
+0xfffffd7ffd32c538:   0000000000000012 fffffd7ffd32c580
+0xfffffd7ffd32c548:   fffffd7ffd32ca60 0000000000766e80
+0xfffffd7ffd32c558:   0000000000000001 fffffd7ffd32c9c0
+0xfffffd7ffd32c568:   fffffd7ffd1560a8 fffffd7ffd32d2d0
+0xfffffd7ffd32c578:   000000000041e9f8 2f646e616d6d6f43
+0xfffffd7ffd32c588:   616c632e65766153 00000000e3007373
+0xfffffd7ffd32c598:   00000000ffffffff fffffd7ffd32c640
+0xfffffd7ffd32c5a8:   fffffd7ffdc61bdf 000000000041e800
+0xfffffd7ffd32c5b8:   fffffd7ffdc617a8 fffffd7ffd32c600
+0xfffffd7ffd32c5c8:   00000003fe9c4512 000000000041e800
+0xfffffd7ffd32c5d8:   00000170af319cf8 00000170af318cf5
+0xfffffd7ffd32c5e8:   00000000e3e327e8 fffffd7fe3cea2d8
+0xfffffd7ffd32c5f8:   000000000041e800 fffffd7fe3cea2d8
+0xfffffd7ffd32c608:   000000000041e800 fffffd7fe3cea2d8
+0xfffffd7ffd32c618:   0000000000417950 0000000000000003
+0xfffffd7ffd32c628:   00000000ffffffff fffffd7fe3cea2d8
+0xfffffd7ffd32c638:   0000000000417950 fffffd7ffd32c710
+0xfffffd7ffd32c648:   fffffd7ffe922961 00000000e3e327c8
+0xfffffd7ffd32c658:   0000000000000000 fffffd7fe3cea2d8
+0xfffffd7ffd32c668:   00000000005ad940 fffffd7fe3cea2d8
+0xfffffd7ffd32c678:   000000000041e800 fffffd7fe3cea2d8
+0xfffffd7ffd32c688:   0000000000000000 00000000005ad940
+0xfffffd7ffd32c698:   0000000000000000 fffffd7fe3cea2d8 
+
+Instructions: (pc=0xfffffd7fff0c3100)
+0xfffffd7fff0c30e0:   66 0f 6f 42 10 49 83 e8 10 48 8d 52 10 66 0f 3a
+0xfffffd7fff0c30f0:   0f c2 0b 66 0f 7f 01 48 8d 49 10 e9 a0 f9 ff ff
+0xfffffd7fff0c3100:   66 0f 6f 5a 10 49 83 e8 30 66 0f 6f 42 20 66 0f
+0xfffffd7fff0c3110:   6f 6a 30 48 8d 52 30 49 83 f8 30 66 0f 6f d3 66 
+
+Register to memory mapping:
+
+RAX=0x00000000008e4f32 is an unknown value
+RBX=0x0000000000006f43 is an unknown value
+RCX=0x00000000008e5eb0 is an unknown value
+RDX=0xfffffd7fff29bff0 is an unknown value
+RSP=0xfffffd7ffd32c4a8 is pointing into the stack for thread: 0x000000000041e800
+RBP=0xfffffd7ffd32c500 is pointing into the stack for thread: 0x000000000041e800
+RSI=0xfffffd7fff29b07e is an unknown value
+RDI=0x00000000008e4f32 is an unknown value
+R8 =0x0000000000005fc5 is an unknown value
+R9 =0x0000000000000b90 is an unknown value
+R10=0xfffffd7fff0c3100: memcpy+0x15d0 in /lib/amd64/libc.so.1 at 0xfffffd7fff070000
+R11=0x000000000000000c is an unknown value
+R12=0x0000000000ac08d0 is an unknown value
+R13=0xfffffd7fff29b050 is an unknown value
+R14=0x0000000000766e80 is an unknown value
+R15=0xfffffd7fff29b07e is an unknown value
+
+
+Stack: [0xfffffd7ffd22f000,0xfffffd7ffd32f000],  sp=0xfffffd7ffd32c4a8,  free space=1013k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libc.so.1+0x53100]  memcpy+0x15d0
+C  [libzip.so+0x141c0]  ZIP_GetEntry2+0xc0
+C  [libzip.so+0x60a8]  Java_java_util_zip_ZipFile_getEntry+0x94
+j  java.util.zip.ZipFile.getEntry(J[BZ)J+0
+j  java.util.zip.ZipFile.getEntry(Ljava/lang/String;)Ljava/util/zip/ZipEntry;+38
+j  java.util.jar.JarFile.getEntry(Ljava/lang/String;)Ljava/util/zip/ZipEntry;+2
+j  java.util.jar.JarFile.getJarEntry(Ljava/lang/String;)Ljava/util/jar/JarEntry;+2
+j  sun.misc.URLClassPath$JarLoader.getResource(Ljava/lang/String;Z)Lsun/misc/Resource;+42
+j  sun.misc.URLClassPath.getResource(Ljava/lang/String;Z)Lsun/misc/Resource;+62
+j  java.net.URLClassLoader$1.run()Ljava/lang/Class;+26
+j  java.net.URLClassLoader$1.run()Ljava/lang/Object;+1
+v  ~StubRoutines::call_stub
+V  [libjvm.so+0xcd23c6]  void JavaCalls::call_helper(JavaValue*,methodHandle*,JavaCallArguments*,Thread*)+0xa26
+V  [libjvm.so+0xcd1995]  void JavaCalls::call(JavaValue*,methodHandle,JavaCallArguments*,Thread*)+0x25
+V  [libjvm.so+0xe393a3]  JVM_DoPrivileged+0xd17
+C  [libjava.so+0x107ff]  Java_java_security_AccessController_doPrivileged__Ljava_security_PrivilegedExceptionAction_2Ljava_security_AccessControlContext_2+0xf
+j  java.security.AccessController.doPrivileged(Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;)Ljava/lang/Object;+0
+j  java.net.URLClassLoader.findClass(Ljava/lang/String;)Ljava/lang/Class;+13
+j  java.lang.ClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class;+70
+j  sun.misc.Launcher$AppClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class;+81
+j  java.lang.ClassLoader.loadClass(Ljava/lang/String;)Ljava/lang/Class;+3
+v  ~StubRoutines::call_stub
+V  [libjvm.so+0xcd23c6]  void JavaCalls::call_helper(JavaValue*,methodHandle*,JavaCallArguments*,Thread*)+0xa26
+V  [libjvm.so+0xccec27]  void JavaCalls::call_virtual(JavaValue*,KlassHandle,Symbol*,Symbol*,JavaCallArguments*,Thread*)+0x45b
+V  [libjvm.so+0xccf096]  void JavaCalls::call_virtual(JavaValue*,Handle,KlassHandle,Symbol*,Symbol*,Handle,Thread*)+0x7a
+V  [libjvm.so+0x139bb5f]  instanceKlassHandle SystemDictionary::load_instance_class(Symbol*,Handle,Thread*)+0x9e3
+V  [libjvm.so+0x1398d2f]  Klass*SystemDictionary::resolve_instance_class_or_null(Symbol*,Handle,Handle,Thread*)+0x847
+V  [libjvm.so+0x1396189]  Klass*SystemDictionary::resolve_or_fail(Symbol*,Handle,Handle,bool,Thread*)+0x1b9
+V  [libjvm.so+0xa12cb0]  Klass*ConstantPool::klass_at_impl(constantPoolHandle,int,Thread*)+0x41c
+V  [libjvm.so+0xcb5404]  void InterpreterRuntime::_new(JavaThread*,ConstantPool*,int)+0x264
+j  Command.CommandShell.Analyze(LMyOwnClasses/HumanList;Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/lang/String;Z)Ljava/util/LinkedHashMap;+23
+j  Main.main([Ljava/lang/String;)V+531
+v  ~StubRoutines::call_stub
+V  [libjvm.so+0xcd23c6]  void JavaCalls::call_helper(JavaValue*,methodHandle*,JavaCallArguments*,Thread*)+0xa26
+V  [libjvm.so+0xcd1995]  void JavaCalls::call(JavaValue*,methodHandle,JavaCallArguments*,Thread*)+0x25
+V  [libjvm.so+0xd75908]  jni_CallStaticVoidMethod+0x8c0
+C  [libjli.so+0xa8c5]  JavaMain+0x669
+C  [libc.so.1+0xddbab]  _thr_setup+0x5b
+C  [libc.so.1+0xddde0]  _lwp_start+0x0
+C  0x0000000000000000
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+j  java.util.zip.ZipFile.getEntry(J[BZ)J+0
+j  java.util.zip.ZipFile.getEntry(Ljava/lang/String;)Ljava/util/zip/ZipEntry;+38
+j  java.util.jar.JarFile.getEntry(Ljava/lang/String;)Ljava/util/zip/ZipEntry;+2
+j  java.util.jar.JarFile.getJarEntry(Ljava/lang/String;)Ljava/util/jar/JarEntry;+2
+j  sun.misc.URLClassPath$JarLoader.getResource(Ljava/lang/String;Z)Lsun/misc/Resource;+42
+j  sun.misc.URLClassPath.getResource(Ljava/lang/String;Z)Lsun/misc/Resource;+62
+j  java.net.URLClassLoader$1.run()Ljava/lang/Class;+26
+j  java.net.URLClassLoader$1.run()Ljava/lang/Object;+1
+v  ~StubRoutines::call_stub
+j  java.security.AccessController.doPrivileged(Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;)Ljava/lang/Object;+0
+j  java.net.URLClassLoader.findClass(Ljava/lang/String;)Ljava/lang/Class;+13
+j  java.lang.ClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class;+70
+j  sun.misc.Launcher$AppClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class;+81
+j  java.lang.ClassLoader.loadClass(Ljava/lang/String;)Ljava/lang/Class;+3
+v  ~StubRoutines::call_stub
+j  Command.CommandShell.Analyze(LMyOwnClasses/HumanList;Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/lang/String;Z)Ljava/util/LinkedHashMap;+23
+j  Main.main([Ljava/lang/String;)V+531
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00000000006f7800 JavaThread "Service Thread" daemon [_thread_blocked, id=32, stack(0xfffffd7fdfff2000,0xfffffd7fe00f2000)]
+  0x00000000006d8000 JavaThread "C1 CompilerThread11" daemon [_thread_blocked, id=31, stack(0xfffffd7fe00f3000,0xfffffd7fe01f3000)]
+  0x00000000006d5800 JavaThread "C1 CompilerThread10" daemon [_thread_blocked, id=30, stack(0xfffffd7fe01f4000,0xfffffd7fe02f4000)]
+  0x00000000006cc000 JavaThread "C1 CompilerThread9" daemon [_thread_blocked, id=29, stack(0xfffffd7fe02f5000,0xfffffd7fe03f5000)]
+  0x00000000006b9000 JavaThread "C1 CompilerThread8" daemon [_thread_blocked, id=28, stack(0xfffffd7fe03f6000,0xfffffd7fe04f6000)]
+  0x00000000006b7000 JavaThread "C2 CompilerThread7" daemon [_thread_blocked, id=27, stack(0xfffffd7fe04f7000,0xfffffd7fe05f7000)]
+  0x00000000006a5800 JavaThread "C2 CompilerThread6" daemon [_thread_blocked, id=26, stack(0xfffffd7fe05f8000,0xfffffd7fe06f8000)]
+  0x0000000000691000 JavaThread "C2 CompilerThread5" daemon [_thread_blocked, id=25, stack(0xfffffd7fe06f9000,0xfffffd7fe07f9000)]
+  0x000000000066e800 JavaThread "C2 CompilerThread4" daemon [_thread_blocked, id=24, stack(0xfffffd7fe07fa000,0xfffffd7fe08fa000)]
+  0x0000000000654800 JavaThread "C2 CompilerThread3" daemon [_thread_blocked, id=23, stack(0xfffffd7fe08fb000,0xfffffd7fe09fb000)]
+  0x0000000000631000 JavaThread "C2 CompilerThread2" daemon [_thread_blocked, id=22, stack(0xfffffd7fe09fc000,0xfffffd7fe0afc000)]
+  0x000000000062f000 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=21, stack(0xfffffd7fe0afd000,0xfffffd7fe0bfd000)]
+  0x000000000062a000 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=20, stack(0xfffffd7fe0bfe000,0xfffffd7fe0cfe000)]
+  0x0000000000628800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=19, stack(0xfffffd7fe0cff000,0xfffffd7fe0dff000)]
+  0x00000000005eb800 JavaThread "Finalizer" daemon [_thread_blocked, id=18, stack(0xfffffd7fe0fd4000,0xfffffd7fe10d4000)]
+  0x00000000005e4000 JavaThread "Reference Handler" daemon [_thread_blocked, id=17, stack(0xfffffd7fe10d5000,0xfffffd7fe11d5000)]
+=>0x000000000041e800 JavaThread "main" [_thread_in_native, id=2, stack(0xfffffd7ffd22f000,0xfffffd7ffd32f000)]
+
+Other Threads:
+  0x00000000005df000 VMThread [stack: 0xfffffd7fe11d6000,0xfffffd7fe12d6000] [id=16]
+  0x00000000006fc000 WatcherThread [stack: 0xfffffd7fdfef1000,0xfffffd7fdfff1000] [id=33]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 38912K, used 7405K [0xfffffd7feb000000, 0xfffffd7feda00000, 0xfffffd7feda00000)
+  eden space 34816K, 21% used [0xfffffd7feb000000,0xfffffd7feb73b678,0xfffffd7fed200000)
+  from space 4096K, 0% used [0xfffffd7fed600000,0xfffffd7fed600000,0xfffffd7feda00000)
+  to   space 4096K, 0% used [0xfffffd7fed200000,0xfffffd7fed200000,0xfffffd7fed600000)
+ ParOldGen       total 88064K, used 0K [0xfffffd7fe5a00000, 0xfffffd7feb000000, 0xfffffd7feb000000)
+  object space 88064K, 0% used [0xfffffd7fe5a00000,0xfffffd7fe5a00000,0xfffffd7feb000000)
+ Metaspace       used 4906K, capacity 5074K, committed 5248K, reserved 1056768K
+  class space    used 542K, capacity 601K, committed 640K, reserved 1048576K
+
+Card table byte_map: [0xfffffd7ffd10e000,0xfffffd7ffd14f000] byte_map_base: 0xff7ffd813d1e1000
+
+Marking Bits: (ParMarkBitMap*) 0xfffffd7ffeea9090
+ Begin Bits: [0xfffffd7fe4600000, 0xfffffd7fe4800000)
+ End Bits:   [0xfffffd7fe4800000, 0xfffffd7fe4a00000)
+
+Polling page: 0xfffffd7ffd3a0000
+
+CodeCache: size=245760Kb used=3400Kb max_used=3400Kb free=242359Kb
+ bounds [0xfffffd7fee000000, 0xfffffd7fee400000, 0xfffffd7ffd000000]
+ total_blobs=596 nmethods=312 adapters=195
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 0,241 Thread 0x00000000006b9000  307       3       java.time.temporal.ValueRange::isValidValue (24 bytes)
+Event: 0,241 Thread 0x00000000006d8000  308       3       java.lang.Math::floorDiv (31 bytes)
+Event: 0,241 Thread 0x00000000006d5800  309       1       java.time.zone.ZoneOffsetTransition::getOffsetAfter (5 bytes)
+Event: 0,241 Thread 0x00000000006cc000 nmethod 306 0xfffffd7fee34fcd0 code [0xfffffd7fee34fe20, 0xfffffd7fee34ff90]
+Event: 0,241 Thread 0x00000000006cc000  310       1       java.time.zone.ZoneOffsetTransition::getOffsetBefore (5 bytes)
+Event: 0,241 Thread 0x00000000006d5800 nmethod 309 0xfffffd7fee350010 code [0xfffffd7fee350160, 0xfffffd7fee350290]
+Event: 0,241 Thread 0x00000000006cc000 nmethod 310 0xfffffd7fee3502d0 code [0xfffffd7fee350420, 0xfffffd7fee350550]
+Event: 0,241 Thread 0x00000000006d8000 nmethod 308 0xfffffd7fee350590 code [0xfffffd7fee350700, 0xfffffd7fee350910]
+Event: 0,241 Thread 0x00000000006b9000 nmethod 307 0xfffffd7fee3509d0 code [0xfffffd7fee350b40, 0xfffffd7fee350f30]
+Event: 663,058 Thread 0x00000000006cc000  311       3       java.util.ArrayList::rangeCheck (22 bytes)
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (9 events):
+Event: 0,066 Thread 0x000000000041e800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.defineClass(Ljava/lang/String;[BII)Ljava/lang/Class; name or signature does not match> (0xfffffd7feb012b78) thrown at [/HUDSON/java_re/workspace/8-2-build-solaris-amd64/jdk8u60/4407/hotspo
+Event: 0,066 Thread 0x000000000041e800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.prefetchRead(Ljava/lang/Object;J)V name or signature does not match> (0xfffffd7feb012e60) thrown at [/HUDSON/java_re/workspace/8-2-build-solaris-amd64/jdk8u60/4407/hotspot/src/share/vm/pri
+Event: 0,150 Thread 0x000000000041e800 Exception <a 'java/security/PrivilegedActionException'> (0xfffffd7feb412780) thrown at [/HUDSON/java_re/workspace/8-2-build-solaris-amd64/jdk8u60/4407/hotspot/src/share/vm/prims/jvm.cpp, line 1386]
+Event: 0,150 Thread 0x000000000041e800 Exception <a 'java/security/PrivilegedActionException'> (0xfffffd7feb412b78) thrown at [/HUDSON/java_re/workspace/8-2-build-solaris-amd64/jdk8u60/4407/hotspot/src/share/vm/prims/jvm.cpp, line 1386]
+Event: 0,151 Thread 0x000000000041e800 Exception <a 'java/security/PrivilegedActionException'> (0xfffffd7feb415330) thrown at [/HUDSON/java_re/workspace/8-2-build-solaris-amd64/jdk8u60/4407/hotspot/src/share/vm/prims/jvm.cpp, line 1386]
+Event: 0,151 Thread 0x000000000041e800 Exception <a 'java/security/PrivilegedActionException'> (0xfffffd7feb415728) thrown at [/HUDSON/java_re/workspace/8-2-build-solaris-amd64/jdk8u60/4407/hotspot/src/share/vm/prims/jvm.cpp, line 1386]
+Event: 0,164 Thread 0x000000000041e800 Exception <a 'java/lang/NullPointerException'> (0xfffffd7feb4407a0) thrown at [/HUDSON/java_re/workspace/8-2-build-solaris-amd64/jdk8u60/4407/hotspot/src/share/vm/interpreter/linkResolver.cpp, line 1178]
+Event: 0,224 Thread 0x000000000041e800 Exception <a 'java/lang/NoSuchFieldError': method resolution failed> (0xfffffd7feb62a748) thrown at [/HUDSON/java_re/workspace/8-2-build-solaris-amd64/jdk8u60/4407/hotspot/src/share/vm/prims/methodHandles.cpp, line 1146]
+Event: 0,226 Thread 0x000000000041e800 Exception <a 'java/lang/NoSuchFieldError': method resolution failed> (0xfffffd7feb637ee8) thrown at [/HUDSON/java_re/workspace/8-2-build-solaris-amd64/jdk8u60/4407/hotspot/src/share/vm/prims/methodHandles.cpp, line 1146]
+
+Events (10 events):
+Event: 0,241 loading class java/time/Instant
+Event: 0,241 loading class java/time/Instant done
+Event: 0,241 loading class java/util/LinkedHashMap$LinkedValues
+Event: 0,242 loading class java/util/LinkedHashMap$LinkedValues done
+Event: 0,242 loading class java/util/LinkedHashMap$LinkedValueIterator
+Event: 0,242 loading class java/util/LinkedHashMap$LinkedValueIterator done
+Event: 4,154 Executing VM operation: EnableBiasedLocking
+Event: 4,154 Executing VM operation: EnableBiasedLocking done
+Event: 663,058 loading class Command/Save
+Event: 663,058 loading class Command/Save done
+
+
+Dynamic libraries:
+0x0000000000400000 	/usr/jdk/instances/jdk1.8.0_60/bin/java
+0xfffffd7fff210000 	/usr/jdk/instances/jdk1.8.0_60/bin/../lib/amd64/jli/libjli.so
+0xfffffd7fff200000 	/lib/64/libthread.so.1
+0xfffffd7fff1c0000 	/lib/64/libdl.so.1
+0xfffffd7fff070000 	/lib/64/libc.so.1
+0xfffffd7ffd600000 	/usr/jdk/instances/jdk1.8.0_60/jre/lib/amd64/server/libjvm.so
+0xfffffd7ffefd0000 	/lib/64/libsocket.so.1
+0xfffffd7fff000000 	/usr/lib/64/libsched.so.1
+0xfffffd7ffefa0000 	/lib/64/libm.so.1
+0xfffffd7ffef70000 	/usr/lib/64/libCrun.so.1
+0xfffffd7ffef50000 	/lib/64/libdoor.so.1
+0xfffffd7ffd5c0000 	/usr/lib/64/libdemangle.so.1
+0xfffffd7ffd5a0000 	/lib/64/libkstat.so.1
+0xfffffd7ffd4d0000 	/lib/64/libnsl.so.1
+0xfffffd7ffd450000 	/lib/64/libm.so.2
+0xfffffd7ffd420000 	/lib/64/libmp.so.2
+0xfffffd7ffd400000 	/lib/64/libmd.so.1
+0xfffffd7ffd3d0000 	/lib/64/libscf.so.1
+0xfffffd7ffd3b0000 	/lib/64/libuutil.so.1
+0xfffffd7ffd390000 	/lib/64/libgen.so.1
+0xfffffd7ffd200000 	/usr/jdk/instances/jdk1.8.0_60/jre/lib/amd64/libverify.so
+0xfffffd7ffd1b0000 	/usr/jdk/instances/jdk1.8.0_60/jre/lib/amd64/libjava.so
+0xfffffd7ffd150000 	/usr/jdk/instances/jdk1.8.0_60/jre/lib/amd64/libzip.so
+0xfffffd7fe0e00000 	/usr/lib/locale/ru_RU.UTF-8/amd64/ru_RU.UTF-8.so.3
+0xfffffd7fe4490000 	/usr/lib/locale/common/amd64/methods_unicode.so.3
+
+VM Arguments:
+jvm_args: -Xmx128M -Xms128M 
+java_command: Lab5.jar Exercise.xml
+java_class_path (initial): Lab5.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=/export/labs/eTester:/export/labs/lcheck:/opt/glassfish3/bin:/usr/postgres/9.6-pgdg/bin/64:/usr/bin:/sbin:/usr/sbin:/usr/ccs/bin:/usr/ucb:/usr/openwin/bin:/usr/dt/bin:/usr/sfw/bin:/opt/sfw/bin:/usr/local/bin:/opt/csw/bin:/opt/SUNWut/bin:/opt/oracle/product/11.2.0/dbhome_1/bin:/opt/oracle/product/11.2.0/dbhome_1/sqldeveloper/sqldeveloper/bin
+SHELL=/usr/bin/ksh
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x14c95d0], sa_mask[0]=11111111011111111111110111111111, sa_flags=SA_RESTART|SA_SIGINFO
+SIGBUS: [libjvm.so+0x14c95d0], sa_mask[0]=11111111011111111111110111111111, sa_flags=SA_RESTART|SA_SIGINFO
+SIGFPE: [libjvm.so+0x11ea748], sa_mask[0]=11111111011111111111110111111111, sa_flags=SA_RESTART|SA_SIGINFO
+SIGPIPE: [libjvm.so+0x11ea748], sa_mask[0]=11111111011111111111110111111111, sa_flags=SA_RESTART|SA_SIGINFO
+SIGXFSZ: [libjvm.so+0x11ea748], sa_mask[0]=11111111011111111111110111111111, sa_flags=SA_RESTART|SA_SIGINFO
+SIGILL: [libjvm.so+0x11ea748], sa_mask[0]=11111111011111111111110111111111, sa_flags=SA_RESTART|SA_SIGINFO
+SIGUSR1: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGUSR2: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGQUIT: [libjvm.so+0x11e3da8], sa_mask[0]=11111111011111111111110111111111, sa_flags=SA_RESTART
+SIGHUP: [libjvm.so+0x11e3da8], sa_mask[0]=11111111011111111111110111111111, sa_flags=SA_RESTART
+SIGINT: [libjvm.so+0x11e3da8], sa_mask[0]=11111111011111111111110111111111, sa_flags=SA_RESTART
+SIGTERM: [libjvm.so+0x11e3da8], sa_mask[0]=11111111011111111111110111111111, sa_flags=SA_RESTART
+SIG39: [libjvm.so+0x11ea790], sa_mask[0]=00000000000000000000000000000000, sa_flags=SA_SIGINFO
+SIG40: [libjvm.so+0x11ea748], sa_mask[0]=11111111011111111111110111111111, sa_flags=SA_RESTART|SA_SIGINFO
+
+
+---------------  S Y S T E M  ---------------
+
+OS:                    Oracle Solaris 10 8/11 s10x_u10wos_17b X86
+  Copyright (c) 1983, 2011, Oracle and/or its affiliates. All rights reserved.
+                            Assembled 23 August 2011
+
+uname:SunOS 5.10 Generic_150401-59 i86pc
+  (T2 libthread)
+rlimit: STACK 10240k, CORE 0k, NOFILE 65536, AS 4194304k
+load average:1,40 1,36 1,35
+
+CPU:total 16 (4 cores per cpu, 2 threads per core) family 6 model 45 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, aes, clmul, ht, tsc, tscinvbit, tscinv
+
+Memory: 4k page, physical 134189052k(5012044k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.60-b23) for solaris-amd64 JRE (1.8.0_60-b27), built on Aug  4 2015 17:52:33 by "java_re" with Sun Studio 12u1
+
+time: Fri Mar  6 12:44:48 2020
+elapsed time: 663 seconds (0d 0h 11m 3s)
+

@@ -1,0 +1,44 @@
+<humanList>
+<humanBeing>
+    <name>Я</name>
+    <coordinates>
+        <y>1</y>
+        <x>82</x>
+    </coordinates>
+    <realHero>true</realHero>
+    <impactSpeed>20</impactSpeed>
+    <weaponType>SHOTGUN</weaponType>
+    <mood>RAGE</mood>
+    <car>
+        <cool>true</cool>
+    </car>
+</humanBeing>
+    <humanBeing>
+        <name>Футбольный</name>
+        <coordinates>
+            <y>2</y>
+            <x>82</x>
+        </coordinates>
+        <realHero>true</realHero>
+        <impactSpeed>20</impactSpeed>
+        <weaponType>SHOTGUN</weaponType>
+        <mood>FRENZY</mood>
+        <car>
+            <cool>true</cool>
+        </car>
+    </humanBeing>
+<humanBeing>
+    <name>Мячик</name>
+    <coordinates>
+        <y>3</y>
+        <x>82</x>
+    </coordinates>
+    <realHero>true</realHero>
+    <impactSpeed>20</impactSpeed>
+    <weaponType>SHOTGUN</weaponType>
+    <mood>SADNESS</mood>
+    <car>
+        <cool>true</cool>
+    </car>
+</humanBeing>
+</humanList>
